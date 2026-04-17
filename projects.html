@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects by Kazura Kenzo - Full-stack, data engineering, and software development work." />
+  <title>Projects - Kazura Kenzo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">Kazura Kenzo</a>
+    <ul class="nav-links">
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="section-eyebrow">Portfolio</div>
+      <h1>Projects</h1>
+      <p>Software, data engineering, and full-stack work built over the past three years. Updated as new projects are completed.</p>
+    </div>
+  </div>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <span class="filter-label">Filter</span>
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+    <button class="filter-btn" data-filter="data">Data &amp; Analytics</button>
+    <button class="filter-btn" data-filter="java">Java</button>
+    <button class="filter-btn" data-filter="web">Web</button>
+  </div>
+
+  <!-- PROJECTS GRID -->
+  <div class="projects-page-body">
+    <div class="projects-all-grid" id="projects-grid">
+
+
+      <!-- FEATURED: Marketplace -->
+      <a href="https://github.com/kenzokaz/second-marketplace" target="_blank" rel="noopener"
+         class="project-card-featured fade-up"
+         id="marketplace"
+         data-category="fullstack"
+         style="transition-delay:0.08s">
+        <div class="featured-left">
+          <span class="featured-badge">Full-Stack - 2026</span>
+          <div class="featured-title">Second-Hand Marketplace</div>
+          <p class="featured-desc">
+            A complete buy-and-sell web application covering electronics, clothing, books, vinyl, and collectibles. Built with a PHP backend and MySQL database. Includes both a seller dashboard for listing management and an admin panel for platform oversight.
+          </p>
+          <div class="card-tags" style="margin-bottom:1.25rem">
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Bootstrap 5</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">XAMPP</span>
+          </div>
+          <span class="featured-link">
+            View on GitHub
+            <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </span>
+        </div>
+
+        <div class="featured-right">
+          <div class="featured-detail-label">Key features</div>
+          <div class="featured-detail-value">
+            User registration / login / logout · Browse, search, and filter by category and condition ·
+            Shopping cart with add, remove, and quantity tracking · Checkout with order placement and
+            automatic stock decrement · Order history · Seller dashboard · Admin panel ·
+            SQL injection protection via prepared statements · Password hashing
+          </div>
+
+          <div class="featured-detail-label">Security</div>
+          <div class="featured-detail-value">
+            All database queries use PDO prepared statements. Passwords stored with PHP's
+            <code>password_hash()</code>. Client-side validation supplemented by server-side checks.
+          </div>
+
+          <div class="featured-detail-label">Status</div>
+          <div class="featured-detail-value">Complete - local deployment via XAMPP.</div>
+        </div>
+      </a>
+
+      <!-- FEATURED: Coach-Fit -->
+      <a href="https://github.com/Davidonwukwe/coach-fit" target="_blank" rel="noopener"
+         class="project-card-featured fade-up"
+         id="coachfit"
+         data-category="fullstack">
+        <div class="featured-left">
+          <span class="featured-badge">Featured - 2025</span>
+          <div class="featured-title">Coach-Fit</div>
+          <p class="featured-desc">
+            A full-stack fitness tracking application built with React and Node.js. Users can log workouts at the exercise, set, rep, and RPE level. The dashboard surfaces weekly session counts, exercise breakdowns, and progress trends. An AI layer (Google Gemini) generates personalised training recommendations based on logged history.
+          </p>
+          <div class="card-tags" style="margin-bottom:1.25rem">
+            <span class="tag">React</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Express</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">JWT</span>
+            <span class="tag">Google Gemini</span>
+          </div>
+          <span class="featured-link">
+            View on GitHub
+            <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </span>
+        </div>
+
+        <div class="featured-right">
+          <div class="featured-detail-label">Key features</div>
+          <div class="featured-detail-value">
+            JWT authentication · Structured workout logging (exercise → sets → reps / weight / RPE) ·
+            Analytics dashboard with muscle balance and consistency scores ·
+            Recovery flags · AI-generated recommendations · Fully responsive UI
+          </div>
+
+          <div class="featured-detail-label">Stack rationale</div>
+          <div class="featured-detail-value">
+            React + TypeScript for a type-safe frontend. MongoDB chosen for flexible workout schema.
+            Google Gemini integrated server-side to keep API keys off the client.
+          </div>
+
+          <div class="featured-detail-label">Status</div>
+          <div class="featured-detail-value">In active development - core features complete.</div>
+        </div>
+      </a>
+
+      <!-- ETL Pipeline -->
+      <a href="https://github.com/kenzokaz/COSC4606_project" target="_blank" rel="noopener"
+         class="project-card fade-up"
+         id="etl"
+         data-category="data"
+         style="transition-delay:0.04s">
+        <div class="card-top">
+          <div class="card-type-icon">🔁</div>
+          <span class="card-date-badge">2025</span>
+        </div>
+        <div class="card-title">End-to-End ETL Pipeline</div>
+        <div class="card-desc">
+          Containerized ETL workflow that ingests raw data, applies transformations with Python and Apache Spark, loads into PostgreSQL, and surfaces insights via Airflow-orchestrated DAGs and a Streamlit dashboard.
+        </div>
+        <div class="card-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Apache Spark</span>
+          <span class="tag">Airflow</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Streamlit</span>
+        </div>
+        <span class="card-link">
+          View on GitHub
+          <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </span>
+      </a>
+
+      <!-- Cleaning Website -->
+      <a href="https://github.com/kenzokaz/Cleaning-Services-Website" target="_blank" rel="noopener"
+         class="project-card fade-up"
+         data-category="web"
+         style="transition-delay:0.08s">
+        <div class="card-top">
+          <div class="card-type-icon">🌐</div>
+          <span class="card-date-badge">Dec 2024</span>
+        </div>
+        <div class="card-title">Cleaning Services Website</div>
+        <div class="card-desc">
+          Responsive business site with service detail sections, a contact form, and an online booking form. Built with semantic HTML and CSS with no framework dependency.
+        </div>
+        <div class="card-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+        </div>
+        <span class="card-link">
+          View on GitHub
+          <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </span>
+      </a>
+
+      <!-- JavaFX Mini-game -->
+      <a href="https://github.com/kenzokaz/MiniGames-" target="_blank" rel="noopener"
+         class="project-card fade-up"
+         data-category="java"
+         style="transition-delay:0.12s">
+        <div class="card-top">
+          <div class="card-type-icon">🎮</div>
+          <span class="card-date-badge">Mar 2023</span>
+        </div>
+        <div class="card-title">JavaFX Mini-Game App</div>
+        <div class="card-desc">
+          JavaFX desktop mini-game application supporting multiplayer user interaction. Built around JavaFX scene and event-handling principles with a clean GUI layout.
+        </div>
+        <div class="card-tags">
+          <span class="tag">Java</span>
+          <span class="tag">JavaFX</span>
+        </div>
+        <span class="card-link">
+          View on GitHub
+          <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </span>
+      </a>
+
+      <!-- Playlist Manager -->
+      <a href="https://github.com/kenzokaz/Java-Music-PlayList-App-" target="_blank" rel="noopener"
+         class="project-card fade-up"
+         data-category="java"
+         style="transition-delay:0.16s">
+        <div class="card-top">
+          <div class="card-type-icon">🎵</div>
+          <span class="card-date-badge">Feb 2022</span>
+        </div>
+        <div class="card-title">Java Playlist Manager</div>
+        <div class="card-desc">
+          CLI-based Java application for managing music playlists. Features a menu-driven interface covering playlist creation, track management, and playback order control.
+        </div>
+        <div class="card-tags">
+          <span class="tag">Java</span>
+          <span class="tag">CLI</span>
+        </div>
+        <span class="card-link">
+          View on GitHub
+          <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </span>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Kazura Kenzo. All rights reserved.</p>
+    <p>Hosted on <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a></p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Filter logic
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('[data-category]');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+
+        cards.forEach(card => {
+          const match = filter === 'all' || card.dataset.category === filter;
+          card.style.display = match ? '' : 'none';
+
+          // Re-trigger fade animation
+          if (match) {
+            card.classList.remove('visible');
+            setTimeout(() => card.classList.add('visible'), 10);
+          }
+        });
+      });
+    });
+
+    // Highlight anchor from index links (e.g. projects.html#coachfit)
+    window.addEventListener('load', () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const target = document.querySelector(hash);
+        if (target) {
+          setTimeout(() => {
+            target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }, 300);
+        }
+      }
+    });
+  </script>
+</body>
+</html>
