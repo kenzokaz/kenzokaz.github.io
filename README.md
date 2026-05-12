@@ -1,4 +1,4 @@
-# Kazura Kenzo — Portfolio
+# Kazura Kenzo - Portfolio
 
 Personal portfolio website. Hosted on GitHub Pages at https://kenzokaz.github.io
 
@@ -22,7 +22,7 @@ portfolio/
 Open `index.html`, find the `<!-- ── PROJECTS ── -->` section and copy-paste an existing `.project-card` block. Update the title, description, tags, date, and `href`.
 
 **Change accent color:**
-Open `assets/css/style.css` and update the `:root` variables at the top — specifically `--burgundy`, `--burgundy-dark`, `--burgundy-light`, and `--burgundy-pale`.
+Open `assets/css/style.css` and update the `:root` variables at the top - specifically `--burgundy`, `--burgundy-dark`, `--burgundy-light`, and `--burgundy-pale`.
 
 **Update CV:**
 Replace `assets/Kenzo_CV.pdf` with the new file (keep the same filename).
@@ -31,4 +31,4 @@ Replace `assets/Kenzo_CV.pdf` with the new file (keep the same filename).
 
 1. Push all files to the root of your `kenzokaz.github.io` repository
 2. GitHub Pages serves `index.html` automatically
-3. No build step needed — pure HTML/CSS/JS
+3. No build step needed - pure HTML/CSS/JS
