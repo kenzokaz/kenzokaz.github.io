@@ -48,7 +48,81 @@
     <div class="projects-all-grid" id="projects-grid">
 
 
-      <!-- FEATURED: Marketplace -->
+    <!-- FEATURED: Toronto Airbnb ETL Pipeline -->
+      <a href="https://github.com/kenzokaz/toronto-airbnb-etl-pipeline" target="_blank" rel="noopener"
+         class="project-card-featured fade-up"
+         id="etl"
+         data-category="data"
+         style="transition-delay:0.04s">
+        <div class="featured-left">
+          <span class="featured-badge">Data Engineering - 2026</span>
+          <div class="featured-title">Toronto Airbnb ETL Pipeline</div>
+          <p class="featured-desc">
+            A containerized end to end data pipeline built on real Toronto Airbnb listings data. Raw data is extracted, cleaned and transformed with Python and Pandas, warehoused in a PostgreSQL star schema, and surfaced through an interactive Streamlit dashboard. Workflow is orchestrated via Apache Airflow DAGs with automated data quality validation. Inspired by a university data engineering project.
+          </p>
+          <div class="card-tags" style="margin-bottom:1.25rem">
+            <span class="tag">Python</span>
+            <span class="tag">Apache Airflow</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Streamlit</span>
+            <span class="tag">Pandas</span>
+          </div>
+          <span class="featured-link">
+            View on GitHub
+            <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </span>
+        </div>
+        <div class="featured-right">
+          <div class="featured-detail-label">Pipeline architecture</div>
+          <div class="featured-detail-value">
+            Extractor loads raw listings into a staging schema · Transformer cleans, type-casts, and normalises data into a star schema (fact_listings + 3 dims) · Airflow DAG schedules weekly runs with extract => transform => validate => branch tasks · Data quality gate enforces ≥70% row retention before marking a run successful
+          </div>
+          <div class="featured-detail-label">Dashboard insights</div>
+          <div class="featured-detail-value">
+            15,776 listings across 140 Toronto neighbourhoods · Top neighbourhoods by listing count · Room type distribution · Availability trends · Top hosts by review volume · Reviews per month by room type and neighbourhood
+          </div>
+          <div class="featured-detail-label">Status</div>
+          <div class="featured-detail-value">Complete - fully containerized, single command deployment via Docker Compose.</div>
+        </div>
+      </a>
+ 
+
+      
+     <div class="project-card fade-up"
+   id="airbnb"
+   data-category="data"
+   style="transition-delay:0.06s">
+  <div class="card-top">
+    <div class="card-type-icon">📊</div>
+    <span class="card-date-badge">2026</span>
+  </div>
+  <div class="card-title">Toronto Airbnb Market Analysis</div>
+  <div class="card-desc">
+    Interactive Tableau dashboard analyzing 5,000+ Toronto Airbnb listings. 
+    Explores neighbourhood ratings, room type distribution, booking 
+    seasonality, host performance, and availability trends across two 
+    linked dashboards.
+  </div>
+  <div class="card-tags">
+    <span class="tag">Tableau</span>
+    <span class="tag">Excel</span>
+    <span class="tag">Data Analytics</span>
+    <span class="tag">Data Visualization</span>
+  </div>
+  <div style="display:flex; gap:0.75rem; margin-top:auto;">
+    <a href="https://github.com/kenzokaz/Toronto-airbnb-market-analysis" target="_blank" rel="noopener" class="card-link">
+      View on GitHub
+      <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+    </a>
+    <a href="https://public.tableau.com/app/profile/kazura.kenzo/viz/TorontoAirbnbMarketAnalysisOverview/Dashboard1_1?publish=yes" target="_blank" rel="noopener" class="card-link">
+      View Dashboard
+      <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+    </a>
+  </div>
+</div>
+
+ <!-- FEATURED: Marketplace -->
       <a href="https://github.com/kenzokaz/second-marketplace" target="_blank" rel="noopener"
          class="project-card-featured fade-up"
          id="marketplace"
@@ -93,112 +167,33 @@
         </div>
       </a>
 
-      
-     <div class="project-card fade-up"
-   id="airbnb"
-   data-category="data"
-   style="transition-delay:0.06s">
-  <div class="card-top">
-    <div class="card-type-icon">📊</div>
-    <span class="card-date-badge">2026</span>
-  </div>
-  <div class="card-title">Toronto Airbnb Market Analysis</div>
-  <div class="card-desc">
-    Interactive Tableau dashboard analyzing 5,000+ Toronto Airbnb listings. 
-    Explores neighbourhood ratings, room type distribution, booking 
-    seasonality, host performance, and availability trends across two 
-    linked dashboards.
-  </div>
-  <div class="card-tags">
-    <span class="tag">Tableau</span>
-    <span class="tag">Excel</span>
-    <span class="tag">Data Analytics</span>
-    <span class="tag">Data Visualization</span>
-  </div>
-  <div style="display:flex; gap:0.75rem; margin-top:auto;">
-    <a href="https://github.com/kenzokaz/Toronto-airbnb-market-analysis" target="_blank" rel="noopener" class="card-link">
-      View on GitHub
-      <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-    </a>
-    <a href="https://public.tableau.com/app/profile/kazura.kenzo/viz/TorontoAirbnbMarketAnalysisOverview/Dashboard1_1?publish=yes" target="_blank" rel="noopener" class="card-link">
-      View Dashboard
-      <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-    </a>
-  </div>
-</div>
-
-      <!-- FEATURED: Coach-Fit -->
+      <!-- Coach-Fit (regular card) -->
       <a href="https://github.com/Davidonwukwe/coach-fit" target="_blank" rel="noopener"
-         class="project-card-featured fade-up"
+         class="project-card fade-up"
          id="coachfit"
          data-category="fullstack">
-        <div class="featured-left">
-          <span class="featured-badge">Featured - 2025</span>
-          <div class="featured-title">Coach-Fit</div>
-          <p class="featured-desc">
-            A full-stack fitness tracking application built with React and Node.js. Users can log workouts at the exercise, set, rep, and RPE level. The dashboard surfaces weekly session counts, exercise breakdowns, and progress trends. An AI layer (Google Gemini) generates personalised training recommendations based on logged history.
-          </p>
-          <div class="card-tags" style="margin-bottom:1.25rem">
-            <span class="tag">React</span>
-            <span class="tag">TypeScript</span>
-            <span class="tag">Node.js</span>
-            <span class="tag">Express</span>
-            <span class="tag">MongoDB</span>
-            <span class="tag">JWT</span>
-            <span class="tag">Google Gemini</span>
-          </div>
-          <span class="featured-link">
-            View on GitHub
-            <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-          </span>
-        </div>
-
-        <div class="featured-right">
-          <div class="featured-detail-label">Key features</div>
-          <div class="featured-detail-value">
-            JWT authentication · Structured workout logging (exercise → sets → reps / weight / RPE) ·
-            Analytics dashboard with muscle balance and consistency scores ·
-            Recovery flags · AI-generated recommendations · Fully responsive UI
-          </div>
-
-          <div class="featured-detail-label">Stack rationale</div>
-          <div class="featured-detail-value">
-            React + TypeScript for a type-safe frontend. MongoDB chosen for flexible workout schema.
-            Google Gemini integrated server-side to keep API keys off the client.
-          </div>
-
-          <div class="featured-detail-label">Status</div>
-          <div class="featured-detail-value">In active development - core features complete.</div>
-        </div>
-      </a>
-
-      <!-- ETL Pipeline -->
-      <a href="https://github.com/kenzokaz/COSC4606_project" target="_blank" rel="noopener"
-         class="project-card fade-up"
-         id="etl"
-         data-category="data"
-         style="transition-delay:0.04s">
         <div class="card-top">
-          <div class="card-type-icon">🔁</div>
+          <div class="card-type-icon">🏋️</div>
           <span class="card-date-badge">2025</span>
         </div>
-        <div class="card-title">End-to-End ETL Pipeline</div>
+        <div class="card-title">Coach-Fit</div>
         <div class="card-desc">
-          Containerized ETL workflow that ingests raw data, applies transformations with Python and Apache Spark, loads into PostgreSQL, and surfaces insights via Airflow-orchestrated DAGs and a Streamlit dashboard.
+          Full-stack fitness tracking app with AI-powered training recommendations, analytics dashboard, and JWT authentication. Built with React, Node.js, and MongoDB. Uses Google Gemini for personalised workout suggestions.
         </div>
         <div class="card-tags">
-          <span class="tag">Python</span>
-          <span class="tag">Apache Spark</span>
-          <span class="tag">Airflow</span>
-          <span class="tag">PostgreSQL</span>
-          <span class="tag">Docker</span>
-          <span class="tag">Streamlit</span>
+          <span class="tag">React</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Express</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">Google Gemini</span>
         </div>
         <span class="card-link">
           View on GitHub
           <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
         </span>
       </a>
+      
 
 
       <!-- Cleaning Website -->
