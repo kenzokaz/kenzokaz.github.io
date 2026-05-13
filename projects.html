@@ -10,6 +10,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .badge-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 1.1rem; }
+    .badge-tags img { height: 22px; border-radius: 4px; }
+  </style>
 </head>
 <body>
 
@@ -47,8 +51,7 @@
   <div class="projects-page-body">
     <div class="projects-all-grid" id="projects-grid">
 
-
-    <!-- FEATURED: Toronto Airbnb ETL Pipeline -->
+      <!-- FEATURED: Toronto Airbnb ETL Pipeline -->
       <a href="https://github.com/kenzokaz/toronto-airbnb-etl-pipeline" target="_blank" rel="noopener"
          class="project-card-featured fade-up"
          id="etl"
@@ -60,13 +63,13 @@
           <p class="featured-desc">
             A containerized end to end data pipeline built on real Toronto Airbnb listings data. Raw data is extracted, cleaned and transformed with Python and Pandas, warehoused in a PostgreSQL star schema, and surfaced through an interactive Streamlit dashboard. Workflow is orchestrated via Apache Airflow DAGs with automated data quality validation. Inspired by a university data engineering project.
           </p>
-          <div class="card-tags" style="margin-bottom:1.25rem">
-            <span class="tag">Python</span>
-            <span class="tag">Apache Airflow</span>
-            <span class="tag">PostgreSQL</span>
-            <span class="tag">Docker</span>
-            <span class="tag">Streamlit</span>
-            <span class="tag">Pandas</span>
+          <div class="badge-tags">
+            <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+            <img src="https://img.shields.io/badge/Apache%20Airflow-017CEE?style=flat-square&logo=apacheairflow&logoColor=white" alt="Airflow"/>
+            <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+            <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker"/>
+            <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit"/>
+            <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas"/>
           </div>
           <span class="featured-link">
             View on GitHub
@@ -86,88 +89,76 @@
           <div class="featured-detail-value">Complete - fully containerized, single command deployment via Docker Compose.</div>
         </div>
       </a>
- 
 
-      
-     <div class="project-card fade-up"
-   id="airbnb"
-   data-category="data"
-   style="transition-delay:0.06s">
-  <div class="card-top">
-    <div class="card-type-icon">📊</div>
-    <span class="card-date-badge">2026</span>
-  </div>
-  <div class="card-title">Toronto Airbnb Market Analysis</div>
-  <div class="card-desc">
-    Interactive Tableau dashboard analyzing 5,000+ Toronto Airbnb listings. 
-    Explores neighbourhood ratings, room type distribution, booking 
-    seasonality, host performance, and availability trends across two 
-    linked dashboards.
-  </div>
-  <div class="card-tags">
-    <span class="tag">Tableau</span>
-    <span class="tag">Excel</span>
-    <span class="tag">Data Analytics</span>
-    <span class="tag">Data Visualization</span>
-  </div>
-  <div style="display:flex; gap:0.75rem; margin-top:auto;">
-    <a href="https://github.com/kenzokaz/Toronto-airbnb-market-analysis" target="_blank" rel="noopener" class="card-link">
-      View on GitHub
-      <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-    </a>
-    <a href="https://public.tableau.com/app/profile/kazura.kenzo/viz/TorontoAirbnbMarketAnalysisOverview/Dashboard1_1?publish=yes" target="_blank" rel="noopener" class="card-link">
-      View Dashboard
-      <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-    </a>
-  </div>
-</div>
+            <!-- Toronto Airbnb Market Analysis -->
+      <div class="project-card fade-up"
+         id="airbnb"
+         data-category="data"
+         style="transition-delay:0.06s">
+        <div class="card-top">
+          <div class="card-type-icon">📊</div>
+          <span class="card-date-badge">2026</span>
+        </div>
+        <div class="card-title">Toronto Airbnb Market Analysis</div>
+        <div class="card-desc">
+          Interactive Tableau dashboard analyzing 5,000+ Toronto Airbnb listings.
+          Explores neighbourhood ratings, room type distribution, booking
+          seasonality, host performance, and availability trends across two
+          linked dashboards.
+        </div>
+        <div class="badge-tags">
+          <img src="https://img.shields.io/badge/Tableau-E97627?style=flat-square&logo=tableau&logoColor=white" alt="Tableau"/>
+          <img src="https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white" alt="Excel"/>
+        </div>
+        <div style="display:flex; gap:0.75rem; margin-top:auto;">
+          <a href="https://github.com/kenzokaz/Toronto-airbnb-market-analysis" target="_blank" rel="noopener" class="card-link">
+            View on GitHub
+            <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+          <a href="https://public.tableau.com/app/profile/kazura.kenzo/viz/TorontoAirbnbMarketAnalysisOverview/Dashboard1_1?publish=yes" target="_blank" rel="noopener" class="card-link">
+            View Dashboard
+            <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+        </div>
+      </div>
 
- <!-- FEATURED: Marketplace -->
-      <a href="https://github.com/kenzokaz/second-marketplace" target="_blank" rel="noopener"
+      <!-- FEATURED: TTC Bus Delay Dashboard -->
+      <a href="https://github.com/kenzokaz/ttc-bus-delay-powerbi" target="_blank" rel="noopener"
          class="project-card-featured fade-up"
-         id="marketplace"
-         data-category="fullstack"
-         style="transition-delay:0.08s">
+         id="ttc"
+         data-category="data"
+         style="transition-delay:0.05s">
         <div class="featured-left">
-          <span class="featured-badge">Full-Stack - 2026</span>
-          <div class="featured-title">Second-Hand Marketplace</div>
+          <span class="featured-badge">Data Analytics - 2025</span>
+          <div class="featured-title">TTC Bus Delay Dashboard</div>
           <p class="featured-desc">
-            A complete buy-and-sell web application covering electronics, clothing, books, vinyl, and collectibles. Built with a PHP backend and MySQL database. Includes both a seller dashboard for listing management and an admin panel for platform oversight.
+            Power BI dashboard analyzing 58,000+ TTC bus delay incidents across Toronto in 2025. Uncovers patterns in delay causes, affected routes, time of week trends, and directional breakdowns using City of Toronto open data. Built with Power Query for data cleaning and transformation.
           </p>
-          <div class="card-tags" style="margin-bottom:1.25rem">
-            <span class="tag">PHP</span>
-            <span class="tag">MySQL</span>
-            <span class="tag">Bootstrap 5</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">XAMPP</span>
+          <div class="badge-tags">
+            <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" alt="Power BI"/>
+            <img src="https://img.shields.io/badge/Power%20Query-285192?style=flat-square&logo=microsoft&logoColor=white" alt="Power Query"/>
+            <img src="https://img.shields.io/badge/DAX-F2C811?style=flat-square&logo=powerbi&logoColor=black" alt="DAX"/>
           </div>
           <span class="featured-link">
             View on GitHub
             <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
           </span>
         </div>
-
         <div class="featured-right">
-          <div class="featured-detail-label">Key features</div>
+          <div class="featured-detail-label">Dashboard visuals</div>
           <div class="featured-detail-value">
-            User registration / login / logout · Browse, search, and filter by category and condition ·
-            Shopping cart with add, remove, and quantity tracking · Checkout with order placement and
-            automatic stock decrement · Order history · Seller dashboard · Admin panel ·
-            SQL injection protection via prepared statements · Password hashing
+            Top 10 most delayed routes by average delay · Delays by day of week · Monthly delay trend line chart · Top 5 delay causes (donut) · Delay by direction (N/S/E/W) · KPI cards for max, average, and total incidents
           </div>
-
-          <div class="featured-detail-label">Security</div>
+          <div class="featured-detail-label">Key findings</div>
           <div class="featured-detail-value">
-            All database queries use PDO prepared statements. Passwords stored with PHP's
-            <code>password_hash()</code>. Client-side validation supplemented by server-side checks.
+            97 Yonge is the most delayed route · Sundays have the highest average delays · Emergency operator issues (EFO) account for 44% of all incidents · Southbound buses experience the longest delays
           </div>
-
           <div class="featured-detail-label">Status</div>
-          <div class="featured-detail-value">Complete - local deployment via XAMPP.</div>
+          <div class="featured-detail-value">Complete - built entirely in Power BI Desktop using City of Toronto 2025 open data.</div>
         </div>
       </a>
 
-      <!-- Coach-Fit (regular card) -->
+            <!-- Coach-Fit -->
       <a href="https://github.com/Davidonwukwe/coach-fit" target="_blank" rel="noopener"
          class="project-card fade-up"
          id="coachfit"
@@ -180,20 +171,84 @@
         <div class="card-desc">
           Full-stack fitness tracking app with AI-powered training recommendations, analytics dashboard, and JWT authentication. Built with React, Node.js, and MongoDB. Uses Google Gemini for personalised workout suggestions.
         </div>
-        <div class="card-tags">
-          <span class="tag">React</span>
-          <span class="tag">TypeScript</span>
-          <span class="tag">Node.js</span>
-          <span class="tag">Express</span>
-          <span class="tag">MongoDB</span>
-          <span class="tag">Google Gemini</span>
+        <div class="badge-tags">
+          <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React"/>
+          <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/>
+          <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"/>
+          <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB"/>
+          <img src="https://img.shields.io/badge/Gemini-4285F4?style=flat-square&logo=google&logoColor=white" alt="Gemini"/>
         </div>
-        <span class="card-link">
+        <span class="card-link" style="margin-top:auto;">
           View on GitHub
           <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
         </span>
       </a>
-      
+
+      <!-- FEATURED: Marketplace -->
+      <a href="https://github.com/kenzokaz/second-marketplace" target="_blank" rel="noopener"
+         class="project-card-featured fade-up"
+         id="marketplace"
+         data-category="fullstack"
+         style="transition-delay:0.08s">
+        <div class="featured-left">
+          <span class="featured-badge">Full-Stack - 2026</span>
+          <div class="featured-title">Second-Hand Marketplace</div>
+          <p class="featured-desc">
+            A complete buy-and-sell web application covering electronics, clothing, books, vinyl, and collectibles. Built with a PHP backend and MySQL database. Includes both a seller dashboard for listing management and an admin panel for platform oversight.
+          </p>
+          <div class="badge-tags">
+            <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP"/>
+            <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL"/>
+            <img src="https://img.shields.io/badge/Bootstrap%205-7952B3?style=flat-square&logo=bootstrap&logoColor=white" alt="Bootstrap 5"/>
+            <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript"/>
+          </div>
+          <span class="featured-link">
+            View on GitHub
+            <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </span>
+        </div>
+        <div class="featured-right">
+          <div class="featured-detail-label">Key features</div>
+          <div class="featured-detail-value">
+            User registration / login / logout · Browse, search, and filter by category and condition ·
+            Shopping cart with add, remove, and quantity tracking · Checkout with order placement and
+            automatic stock decrement · Order history · Seller dashboard · Admin panel ·
+            SQL injection protection via prepared statements · Password hashing
+          </div>
+          <div class="featured-detail-label">Security</div>
+          <div class="featured-detail-value">
+            All database queries use PDO prepared statements. Passwords stored with PHP's
+            <code>password_hash()</code>. Client-side validation supplemented by server-side checks.
+          </div>
+          <div class="featured-detail-label">Status</div>
+          <div class="featured-detail-value">Complete - local deployment via XAMPP.</div>
+        </div>
+      </a>
+
+      <!-- Data Professional Survey Breakdown -->
+      <a href="https://github.com/kenzokaz/data-professional-survey-powerbi" target="_blank" rel="noopener"
+         class="project-card fade-up"
+         id="survey"
+         data-category="data"
+         style="transition-delay:0.07s">
+        <div class="card-top">
+          <div class="card-type-icon">📊</div>
+          <span class="card-date-badge">2025</span>
+        </div>
+        <div class="card-title">Data Professional Survey Breakdown</div>
+        <div class="card-desc">
+          Power BI dashboard analyzing 630 survey responses from data professionals worldwide -
+          salary by job title, programming language preferences, and workplace happiness scores.
+        </div>
+        <div class="badge-tags">
+          <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" alt="Power BI"/>
+          <img src="https://img.shields.io/badge/Power%20Query-285192?style=flat-square&logo=microsoft&logoColor=white" alt="Power Query"/>
+        </div>
+        <span class="card-link" style="margin-top:auto;">
+          View on GitHub
+          <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </span>
+      </a>
 
 
       <!-- Cleaning Website -->
@@ -209,11 +264,11 @@
         <div class="card-desc">
           Responsive business site with service detail sections, a contact form, and an online booking form. Built with semantic HTML and CSS with no framework dependency.
         </div>
-        <div class="card-tags">
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
+        <div class="badge-tags">
+          <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5"/>
+          <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3"/>
         </div>
-        <span class="card-link">
+        <span class="card-link" style="margin-top:auto;">
           View on GitHub
           <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
         </span>
@@ -232,11 +287,11 @@
         <div class="card-desc">
           JavaFX desktop mini-game application supporting multiplayer user interaction. Built around JavaFX scene and event-handling principles with a clean GUI layout.
         </div>
-        <div class="card-tags">
-          <span class="tag">Java</span>
-          <span class="tag">JavaFX</span>
+        <div class="badge-tags">
+          <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java"/>
+          <img src="https://img.shields.io/badge/JavaFX-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="JavaFX"/>
         </div>
-        <span class="card-link">
+        <span class="card-link" style="margin-top:auto;">
           View on GitHub
           <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
         </span>
@@ -255,11 +310,11 @@
         <div class="card-desc">
           CLI-based Java application for managing music playlists. Features a menu-driven interface covering playlist creation, track management, and playback order control.
         </div>
-        <div class="card-tags">
-          <span class="tag">Java</span>
-          <span class="tag">CLI</span>
+        <div class="badge-tags">
+          <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java"/>
+          <img src="https://img.shields.io/badge/CLI-4D4D4D?style=flat-square&logo=windowsterminal&logoColor=white" alt="CLI"/>
         </div>
-        <span class="card-link">
+        <span class="card-link" style="margin-top:auto;">
           View on GitHub
           <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
         </span>
@@ -276,7 +331,6 @@
 
   <script src="assets/js/main.js"></script>
   <script>
-    // Filter logic
     const filterBtns = document.querySelectorAll('.filter-btn');
     const cards = document.querySelectorAll('[data-category]');
 
@@ -284,14 +338,10 @@
       btn.addEventListener('click', () => {
         filterBtns.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
-
         const filter = btn.dataset.filter;
-
         cards.forEach(card => {
           const match = filter === 'all' || card.dataset.category === filter;
           card.style.display = match ? '' : 'none';
-
-          // Re-trigger fade animation
           if (match) {
             card.classList.remove('visible');
             setTimeout(() => card.classList.add('visible'), 10);
@@ -300,15 +350,12 @@
       });
     });
 
-    // Highlight anchor from index links (e.g. projects.html#coachfit)
     window.addEventListener('load', () => {
       const hash = window.location.hash;
       if (hash) {
         const target = document.querySelector(hash);
         if (target) {
-          setTimeout(() => {
-            target.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          }, 300);
+          setTimeout(() => target.scrollIntoView({ behavior: 'smooth', block: 'center' }), 300);
         }
       }
     });
