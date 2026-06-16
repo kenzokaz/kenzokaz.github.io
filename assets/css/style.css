@@ -2109,13 +2109,23 @@ Clean Action links
     width: 100%;
   }
 
-  /* shrink the avatar so it actually fits a phone */
-  .avatar-container { width: 260px !important; height: 260px !important; }
-  .avatar-img { width: 230px !important; height: 230px !important; }
+  /* shrink the avatar container + photo to phone size */
+  #hero .avatar-container { width: 280px !important; height: 280px !important; }
+  #hero .img-wrapper { width: 240px !important; height: 240px !important; }
+  #hero .avatar-img { width: 240px !important; height: 240px !important; }
 
-  /* keep the kinetic rings from clipping the card edges */
-  #hero .ring-layer { width: 100%; height: 100%; }
-  #hero .avatar-container { overflow: visible; }
+  /* rings: .ring-layer is 130% with no offset, so it anchors top-left and spills
+     right. pin the wrapper to center (no animation fighting it) and shrink it to
+     orbit the 240px photo. dropped the goo filter for mobile. */
+  #hero .ring-layer {
+    filter: none !important;
+    top: 50% !important;
+    left: 50% !important;
+    width: 100% !important;
+    height: 100% !important;
+    transform: translate(-50%, -50%) !important;
+    opacity: 1 !important;
+  }
 
   /* role eyebrow was overflowing off-screen - shrink it and let it wrap */
   #hero .hero-title-line {
@@ -2139,6 +2149,13 @@ Clean Action links
     margin: 0 auto 1.75rem !important;
     font-size: 1rem;
   }
+  /* the kinetic dashed rings look lopsided on mobile (no goo filter to blur
+     them into a full halo). hide them and draw one clean ring around the photo. */
+  #hero .ring-layer { display: none !important; }
+
+  #hero .img-wrapper {
+    box-shadow: 0 0 0 6px var(--bg), 0 0 0 8px rgba(132, 37, 37, 0.6);
+  }
 
   /* center the CV button + social circles, let them wrap */
   #hero .hero-actions {
@@ -2148,6 +2165,11 @@ Clean Action links
   }
   .social-circle { width: 48px; height: 48px; }
   .social-circle svg { width: 26px; height: 26px; }
+
+  /* no hover on phones - keep badges visible; top one nudged lower */
+  #hero .profile-location-badge { top: 25px !important; font-size: 0.55rem !important; padding: 5px 12px !important; opacity: 1 !important; transform: translateX(-50%) !important; }
+  #hero .click-me-pill { bottom: 16px !important; font-size: 0.5rem !important; padding: 5px 12px !important; opacity: 1 !important; transform: translateX(-50%) !important; }
+
 }
 
 /* very small phones - dial the name down a touch more */

@@ -69,13 +69,17 @@ if (profileTrigger && profileImg && profileLocation && clickMePill) {
     
     clearTimeout(textRevertTimeout);
     
-    const currentPool = isShowingImg1 ? metaData.img1 : metaData.img2;
-    const randomJoke = currentPool.jokes[Math.floor(Math.random() * currentPool.jokes.length)];
-    const randomPillResponse = currentPool.pillJokes[Math.floor(Math.random() * currentPool.pillJokes.length)];
-    
-    profileLocation.textContent = randomJoke;
-    clickMePill.textContent = randomPillResponse; 
-    
+const currentPool = isShowingImg1 ? metaData.img1 : metaData.img2;
+
+    // On mobile the joke messages are too long for the small circle, im not including them.
+    // The badges keep their normal location/pill text through the swap instead.
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+    if (!isMobile) {
+      const randomJoke = currentPool.jokes[Math.floor(Math.random() * currentPool.jokes.length)];
+      const randomPillResponse = currentPool.pillJokes[Math.floor(Math.random() * currentPool.pillJokes.length)];
+      profileLocation.textContent = randomJoke;
+      clickMePill.textContent = randomPillResponse;
+    }
     setTimeout(() => {
       if (isShowingImg1) {
         profileImg.src = img2;
