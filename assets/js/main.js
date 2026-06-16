@@ -31,7 +31,7 @@ const img2 = 'assets/images/profile-2.jpeg';
 
 const metaData = {
   img1: {
-    location: " ⚲ Robertson Cliffs, Sault Ste. Marie, ON",
+    location: " ⚲ Robertson Cliffs, SSM, ON",
     pillDefault: "CLICK ME",
     jokes: [
       "Refactoring my work-life balance.",
@@ -47,7 +47,7 @@ const metaData = {
     pillDefault: "Thanks for Visiting!", 
     jokes: [
       "Hope you're having a wonderful day.", 
-      "10/10 good boy. Zero syntax errors found."
+      "10/10 good boy. 0 syntax errors found."
     ],
     pillJokes: [
       "BOOP!",
