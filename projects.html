@@ -8,23 +8,24 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <style>
-    .badge-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 1.1rem; }
-    .badge-tags img { height: 22px; border-radius: 4px; }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
   <!-- NAV -->
-  <nav>
-    <a href="index.html" class="nav-logo">Kazura Kenzo</a>
+<nav>
+    <a href="/" class="nav-logo" aria-label="Kazura Kenzo - home">
+      <span class="logo-prompt">kenzo=#</span><span class="logo-query"> SELECT * FROM projects;</span><span class="logo-caret"></span>
+    </a>
     <ul class="nav-links">
-      <li><a href="index.html#experience">Experience</a></li>
-      <li><a href="projects.html" class="active">Projects</a></li>
-      <li><a href="index.html#skills">Skills</a></li>
-      <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+      <li><a href="/#about">About</a></li>
+      <li><a href="/#experience">Experience</a></li>
+      <li><a href="/#education">Education</a></li>
+      <li><a href="/projects" class="active">Projects</a></li>
+      <li><a href="/#skills">Skills</a></li>
+      <li><a href="/#certifications">Certifications</a></li>
+      <li><a href="assets/Kazura Kenzo's CV.pdf" target="_blank" rel="noopener">Resume</a></li>
+      <li><a href="/#contact" class="nav-cta">Contact</a></li>
     </ul>
   </nav>
 
@@ -47,285 +48,291 @@
     <button class="filter-btn" data-filter="web">Web</button>
   </div>
 
-  <!-- PROJECTS GRID -->
-  <div class="projects-page-body">
-    <div class="projects-all-grid" id="projects-grid">
+<div class="projects-page-body">
+  <div class="projects-all-grid" id="projects-grid">
 
-      <!-- FEATURED: Toronto Airbnb ETL Pipeline -->
-      <a href="https://github.com/kenzokaz/toronto-airbnb-etl-pipeline" target="_blank" rel="noopener"
-         class="project-card-featured fade-up"
-         id="etl"
-         data-category="data"
-         style="transition-delay:0.04s">
-        <div class="featured-left">
-          <span class="featured-badge">Data Engineering - 2026</span>
-          <div class="featured-title">Toronto Airbnb ETL Pipeline</div>
-          <p class="featured-desc">
-            A containerized end to end data pipeline built on real Toronto Airbnb listings data. Raw data is extracted, cleaned and transformed with Python and Pandas, warehoused in a PostgreSQL star schema, and surfaced through an interactive Streamlit dashboard. Workflow is orchestrated via Apache Airflow DAGs with automated data quality validation. Inspired by a university data engineering project.
-          </p>
-          <div class="badge-tags">
-            <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
-            <img src="https://img.shields.io/badge/Apache%20Airflow-017CEE?style=flat-square&logo=apacheairflow&logoColor=white" alt="Airflow"/>
-            <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
-            <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker"/>
-            <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit"/>
-            <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas"/>
+    <a href="https://github.com/kenzokaz/toronto-airbnb-etl-pipeline" target="_blank" rel="noopener"
+       class="project-card-featured fade-up"
+       id="etl"
+       data-category="data"
+       style="transition-delay:0.04s">
+      <div class="featured-left">
+        <span class="featured-badge">Data Engineering - 2026</span>
+        <div class="featured-title">Toronto Airbnb ETL Pipeline</div>
+        <p class="featured-desc">
+          A containerized end to end data pipeline built on real Toronto Airbnb listings data. Raw data is extracted, cleaned and transformed with Python and Pandas, warehoused in a PostgreSQL star schema, and surfaced through an interactive Streamlit dashboard. Workflow is orchestrated via Apache Airflow DAGs with automated data quality validation. Inspired by a university data engineering project.
+        </p>
+        
+        <div class="card-footer" style="border-top: none; padding-top: 0; margin-top: auto; width: 100%;">
+          <div class="card-tags">
+            <div class="tech-icon-circle" title="Python"><img src="assets/icons/python.svg" alt="Python"/></div>
+            <div class="tech-icon-circle" title="Apache Airflow"><img src="assets/icons/airflow.svg" alt="Airflow"/></div>
+            <div class="tech-icon-circle" title="PostgreSQL"><img src="assets/icons/postgresql.svg" alt="PostgreSQL"/></div>
+            <div class="tech-icon-circle" title="Docker"><img src="assets/icons/docker.svg" alt="Docker"/></div>
+            <div class="tech-icon-circle" title="Streamlit"><img src="assets/icons/Streamlit.svg" alt="Streamlit"/></div>
           </div>
-          <span class="featured-link">
-            View on GitHub
-            <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-          </span>
+          <div class="card-links-group">
+            <span class="featured-link">
+              View on GitHub
+              <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </span>
+          </div>
         </div>
-        <div class="featured-right">
-          <div class="featured-detail-label">Pipeline architecture</div>
-          <div class="featured-detail-value">
-            Extractor loads raw listings into a staging schema · Transformer cleans, type-casts, and normalises data into a star schema (fact_listings + 3 dims) · Airflow DAG schedules weekly runs with extract => transform => validate => branch tasks · Data quality gate enforces ≥70% row retention before marking a run successful
-          </div>
-          <div class="featured-detail-label">Dashboard insights</div>
-          <div class="featured-detail-value">
-            15,776 listings across 140 Toronto neighbourhoods · Top neighbourhoods by listing count · Room type distribution · Availability trends · Top hosts by review volume · Reviews per month by room type and neighbourhood
-          </div>
-          <div class="featured-detail-label">Status</div>
-          <div class="featured-detail-value">Complete - fully containerized, single command deployment via Docker Compose.</div>
+      </div>
+      <div class="featured-right">
+        <div class="featured-detail-label">Pipeline architecture</div>
+        <div class="featured-detail-value">
+          Extractor loads raw listings into a staging schema · Transformer cleans, type-casts, and normalises data into a star schema (fact_listings + 3 dims) · Airflow DAG schedules weekly runs with extract => transform => validate => branch tasks · Data quality gate enforces ≥70% row retention before marking a run successful
         </div>
-      </a>
+        <div class="featured-detail-label">Dashboard insights</div>
+        <div class="featured-detail-value">
+          15,776 listings across 140 Toronto neighbourhoods · Top neighbourhoods by listing count · Room type distribution · Availability trends · Top hosts by review volume · Reviews per month by room type and neighbourhood
+        </div>
+        <div class="featured-detail-label">Status</div>
+        <div class="featured-detail-value">Complete - fully containerized, single command deployment via Docker Compose.</div>
+      </div>
+    </a>
 
-            <!-- Toronto Airbnb Market Analysis -->
-      <div class="project-card fade-up"
-         id="airbnb"
-         data-category="data"
-         style="transition-delay:0.06s">
-        <div class="card-top">
-          <div class="card-type-icon">📊</div>
-          <span class="card-date-badge">2026</span>
+    <div class="project-card fade-up" id="airbnb" data-category="data" style="transition-delay:0.06s">
+      <div class="card-top">
+        <div class="card-type-icon"><svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+        <span class="card-date-badge">2026</span>
+      </div>
+      <div class="card-title">Toronto Airbnb Market Analysis</div>
+      <div class="card-desc">
+        Interactive Tableau dashboard analyzing 5,000+ Toronto Airbnb listings. Explores neighbourhood ratings, room type distribution, booking seasonality, host performance, and availability trends across two linked dashboards.
+      </div>
+      
+      <div class="card-footer">
+        <div class="card-tags">
+          <div class="tech-icon-circle" title="Tableau"><img src="assets/icons/tableau.svg" alt="Tableau"/></div>
+          <div class="tech-icon-circle" title="Microsoft Excel"><img src="assets/icons/excel.svg" alt="Excel"/></div>
         </div>
-        <div class="card-title">Toronto Airbnb Market Analysis</div>
-        <div class="card-desc">
-          Interactive Tableau dashboard analyzing 5,000+ Toronto Airbnb listings.
-          Explores neighbourhood ratings, room type distribution, booking
-          seasonality, host performance, and availability trends across two
-          linked dashboards.
-        </div>
-        <div class="badge-tags">
-          <img src="https://img.shields.io/badge/Tableau-E97627?style=flat-square&logo=tableau&logoColor=white" alt="Tableau"/>
-          <img src="https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white" alt="Excel"/>
-        </div>
-        <div style="display:flex; gap:0.75rem; margin-top:auto;">
-          <a href="https://github.com/kenzokaz/Toronto-airbnb-market-analysis" target="_blank" rel="noopener" class="card-link">
-            View on GitHub
-            <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-          </a>
+        <div class="card-links-group">
           <a href="https://public.tableau.com/app/profile/kazura.kenzo/viz/TorontoAirbnbMarketAnalysisOverview/Dashboard1_1?publish=yes" target="_blank" rel="noopener" class="card-link">
-            View Dashboard
-            <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            View Dashboard <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+          <a href="https://github.com/kenzokaz/Toronto-airbnb-market-analysis" target="_blank" rel="noopener" class="card-link">
+            View on GitHub <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
           </a>
         </div>
       </div>
-
-      <!-- FEATURED: TTC Bus Delay Dashboard -->
-      <a href="https://github.com/kenzokaz/ttc-bus-delay-powerbi" target="_blank" rel="noopener"
-         class="project-card-featured fade-up"
-         id="ttc"
-         data-category="data"
-         style="transition-delay:0.05s">
-        <div class="featured-left">
-          <span class="featured-badge">Data Analytics - 2025</span>
-          <div class="featured-title">TTC Bus Delay Dashboard</div>
-          <p class="featured-desc">
-            Power BI dashboard analyzing 58,000+ TTC bus delay incidents across Toronto in 2025. Uncovers patterns in delay causes, affected routes, time of week trends, and directional breakdowns using City of Toronto open data. Built with Power Query for data cleaning and transformation.
-          </p>
-          <div class="badge-tags">
-            <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" alt="Power BI"/>
-            <img src="https://img.shields.io/badge/Power%20Query-285192?style=flat-square&logo=microsoft&logoColor=white" alt="Power Query"/>
-            <img src="https://img.shields.io/badge/DAX-F2C811?style=flat-square&logo=powerbi&logoColor=black" alt="DAX"/>
-          </div>
-          <span class="featured-link">
-            View on GitHub
-            <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-          </span>
-        </div>
-        <div class="featured-right">
-          <div class="featured-detail-label">Dashboard visuals</div>
-          <div class="featured-detail-value">
-            Top 10 most delayed routes by average delay · Delays by day of week · Monthly delay trend line chart · Top 5 delay causes (donut) · Delay by direction (N/S/E/W) · KPI cards for max, average, and total incidents
-          </div>
-          <div class="featured-detail-label">Key findings</div>
-          <div class="featured-detail-value">
-            97 Yonge is the most delayed route · Sundays have the highest average delays · Emergency operator issues (EFO) account for 44% of all incidents · Southbound buses experience the longest delays
-          </div>
-          <div class="featured-detail-label">Status</div>
-          <div class="featured-detail-value">Complete - built entirely in Power BI Desktop using City of Toronto 2025 open data.</div>
-        </div>
-      </a>
-
-            <!-- Coach-Fit -->
-      <a href="https://github.com/Davidonwukwe/coach-fit" target="_blank" rel="noopener"
-         class="project-card fade-up"
-         id="coachfit"
-         data-category="fullstack">
-        <div class="card-top">
-          <div class="card-type-icon">🏋️</div>
-          <span class="card-date-badge">2025</span>
-        </div>
-        <div class="card-title">Coach-Fit</div>
-        <div class="card-desc">
-          Full-stack fitness tracking app with AI-powered training recommendations, analytics dashboard, and JWT authentication. Built with React, Node.js, and MongoDB. Uses Google Gemini for personalised workout suggestions.
-        </div>
-        <div class="badge-tags">
-          <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React"/>
-          <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/>
-          <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"/>
-          <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB"/>
-          <img src="https://img.shields.io/badge/Gemini-4285F4?style=flat-square&logo=google&logoColor=white" alt="Gemini"/>
-        </div>
-        <span class="card-link" style="margin-top:auto;">
-          View on GitHub
-          <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-        </span>
-      </a>
-
-      <!-- FEATURED: Marketplace -->
-      <a href="https://github.com/kenzokaz/second-marketplace" target="_blank" rel="noopener"
-         class="project-card-featured fade-up"
-         id="marketplace"
-         data-category="fullstack"
-         style="transition-delay:0.08s">
-        <div class="featured-left">
-          <span class="featured-badge">Full-Stack - 2026</span>
-          <div class="featured-title">Second-Hand Marketplace</div>
-          <p class="featured-desc">
-            A complete buy-and-sell web application covering electronics, clothing, books, vinyl, and collectibles. Built with a PHP backend and MySQL database. Includes both a seller dashboard for listing management and an admin panel for platform oversight.
-          </p>
-          <div class="badge-tags">
-            <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP"/>
-            <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL"/>
-            <img src="https://img.shields.io/badge/Bootstrap%205-7952B3?style=flat-square&logo=bootstrap&logoColor=white" alt="Bootstrap 5"/>
-            <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript"/>
-          </div>
-          <span class="featured-link">
-            View on GitHub
-            <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-          </span>
-        </div>
-        <div class="featured-right">
-          <div class="featured-detail-label">Key features</div>
-          <div class="featured-detail-value">
-            User registration / login / logout · Browse, search, and filter by category and condition ·
-            Shopping cart with add, remove, and quantity tracking · Checkout with order placement and
-            automatic stock decrement · Order history · Seller dashboard · Admin panel ·
-            SQL injection protection via prepared statements · Password hashing
-          </div>
-          <div class="featured-detail-label">Security</div>
-          <div class="featured-detail-value">
-            All database queries use PDO prepared statements. Passwords stored with PHP's
-            <code>password_hash()</code>. Client-side validation supplemented by server-side checks.
-          </div>
-          <div class="featured-detail-label">Status</div>
-          <div class="featured-detail-value">Complete - local deployment via XAMPP.</div>
-        </div>
-      </a>
-
-      <!-- Data Professional Survey Breakdown -->
-      <a href="https://github.com/kenzokaz/data-professional-survey-powerbi" target="_blank" rel="noopener"
-         class="project-card fade-up"
-         id="survey"
-         data-category="data"
-         style="transition-delay:0.07s">
-        <div class="card-top">
-          <div class="card-type-icon">📊</div>
-          <span class="card-date-badge">2025</span>
-        </div>
-        <div class="card-title">Data Professional Survey Breakdown</div>
-        <div class="card-desc">
-          Power BI dashboard analyzing 630 survey responses from data professionals worldwide -
-          salary by job title, programming language preferences, and workplace happiness scores.
-        </div>
-        <div class="badge-tags">
-          <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" alt="Power BI"/>
-          <img src="https://img.shields.io/badge/Power%20Query-285192?style=flat-square&logo=microsoft&logoColor=white" alt="Power Query"/>
-        </div>
-        <span class="card-link" style="margin-top:auto;">
-          View on GitHub
-          <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-        </span>
-      </a>
-
-
-      <!-- Cleaning Website -->
-      <a href="https://github.com/kenzokaz/Cleaning-Services-Website" target="_blank" rel="noopener"
-         class="project-card fade-up"
-         data-category="web"
-         style="transition-delay:0.08s">
-        <div class="card-top">
-          <div class="card-type-icon">🌐</div>
-          <span class="card-date-badge">Dec 2024</span>
-        </div>
-        <div class="card-title">Cleaning Services Website</div>
-        <div class="card-desc">
-          Responsive business site with service detail sections, a contact form, and an online booking form. Built with semantic HTML and CSS with no framework dependency.
-        </div>
-        <div class="badge-tags">
-          <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5"/>
-          <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3"/>
-        </div>
-        <span class="card-link" style="margin-top:auto;">
-          View on GitHub
-          <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-        </span>
-      </a>
-
-      <!-- JavaFX Mini-game -->
-      <a href="https://github.com/kenzokaz/MiniGames-" target="_blank" rel="noopener"
-         class="project-card fade-up"
-         data-category="java"
-         style="transition-delay:0.12s">
-        <div class="card-top">
-          <div class="card-type-icon">🎮</div>
-          <span class="card-date-badge">Mar 2023</span>
-        </div>
-        <div class="card-title">JavaFX Mini-Game App</div>
-        <div class="card-desc">
-          JavaFX desktop mini-game application supporting multiplayer user interaction. Built around JavaFX scene and event-handling principles with a clean GUI layout.
-        </div>
-        <div class="badge-tags">
-          <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java"/>
-          <img src="https://img.shields.io/badge/JavaFX-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="JavaFX"/>
-        </div>
-        <span class="card-link" style="margin-top:auto;">
-          View on GitHub
-          <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-        </span>
-      </a>
-
-      <!-- Playlist Manager -->
-      <a href="https://github.com/kenzokaz/Java-Music-PlayList-App-" target="_blank" rel="noopener"
-         class="project-card fade-up"
-         data-category="java"
-         style="transition-delay:0.16s">
-        <div class="card-top">
-          <div class="card-type-icon">🎵</div>
-          <span class="card-date-badge">Feb 2022</span>
-        </div>
-        <div class="card-title">Java Playlist Manager</div>
-        <div class="card-desc">
-          CLI-based Java application for managing music playlists. Features a menu-driven interface covering playlist creation, track management, and playback order control.
-        </div>
-        <div class="badge-tags">
-          <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java"/>
-          <img src="https://img.shields.io/badge/CLI-4D4D4D?style=flat-square&logo=windowsterminal&logoColor=white" alt="CLI"/>
-        </div>
-        <span class="card-link" style="margin-top:auto;">
-          View on GitHub
-          <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-        </span>
-      </a>
-
     </div>
+
+<div class="project-card-featured fade-up"
+         id="coachfit"
+         data-category="fullstack"
+         style="transition-delay:0.05s">
+      <div class="featured-left">
+        <span class="featured-badge">Full-Stack - 2025</span>
+        <div class="featured-title">Coach-Fit</div>
+       <p class="featured-desc">
+          Your training, quantified. Most fitness apps just store numbers - Coach-Fit treats every logged workout as structured data and builds on top of it. Each session's exercises, sets, reps, weight, and RPE feed a running history that powers trend charts, muscle-balance breakdowns, and recovery insights, so progress is something you can actually see instead of guess at. A Grok layer reads that history to suggest what to train next. Built full-stack with secure authentication and deployed live, it's really a personal data pipeline dressed as a fitness tracker - data-centric by design, and completely free to use.
+        </p>
+
+        <div class="card-footer" style="border-top: none; padding-top: 0; margin-top: auto; width: 100%;">
+          <div class="card-tags">
+            <div class="tech-icon-circle" title="React"><img src="assets/icons/react.svg" alt="React"/></div>
+            <div class="tech-icon-circle" title="TypeScript"><img src="assets/icons/typescript.svg" alt="TypeScript"/></div>
+            <div class="tech-icon-circle" title="Node.js"><img src="assets/icons/nodejs.svg" alt="Node.js"/></div>
+            <div class="tech-icon-circle" title="MongoDB"><img src="assets/icons/mongodb-icon.svg" alt="MongoDB"/></div>
+            <div class="tech-icon-circle" title="Grok"><img src="assets/icons/Grok-logo.svg" alt="Grok"/></div>
+          </div>
+          <div class="card-links-group">
+            <a href="https://coach-fit-one.vercel.app" target="_blank" rel="noopener" class="featured-link">
+              Try it live <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+            <a href="https://github.com/kenzokaz/Coach-Fit." target="_blank" rel="noopener" class="featured-link">
+              View on GitHub <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="featured-right">
+        <div class="featured-detail-label">What it tracks</div>
+        <div class="featured-detail-value">
+          Every set, rep, weight, and RPE becomes structured data · Weekly volume and trend charts · Muscle-balance distribution · Recovery flags from training load · Consistency and streak scoring across sessions.
+        </div>
+        <div class="featured-detail-label">AI layer</div>
+        <div class="featured-detail-value">
+          Grok reads each user's logged history server-side to generate personalised training recommendations, progression suggestions, and rebalancing cues.
+        </div>
+        <div class="featured-detail-label">Built with</div>
+        <div class="featured-detail-value">
+          React + TypeScript frontend · Node.js / Express API · MongoDB for flexible workout documents · JWT authentication · deployed on Vercel.
+        </div>
+        <div class="featured-detail-label">Status</div>
+        <div class="featured-detail-value">Live - free to try, with new tracking features in progress.</div>
+      </div>
+    </div>
+
+    
+    <a href="https://github.com/Davidonwukwe/coach-fit" target="_blank" rel="noopener" class="project-card fade-up" id="coachfit" data-category="fullstack">
+      <div class="card-top">
+        <div class="card-type-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+        <span class="card-date-badge">2025</span>
+      </div>
+      <div class="card-title">Coach-Fit</div>
+      <div class="card-desc">
+        Full-stack fitness tracking app with AI-powered training recommendations, analytics dashboard, and JWT authentication. Built with React, Node.js, and MongoDB. Uses Google Gemini for personalised workout suggestions.
+      </div>
+      
+      <div class="card-footer">
+        <div class="card-tags">
+          <div class="tech-icon-circle" title="React"><img src="assets/icons/react.svg" alt="React"/></div>
+          <div class="tech-icon-circle" title="TypeScript"><img src="assets/icons/typescript.svg" alt="TypeScript"/></div>
+          <div class="tech-icon-circle" title="Node.js"><img src="assets/icons/nodejs.svg" alt="Node.js"/></div>
+          <div class="tech-icon-circle" title="MongoDB"><img src="assets/icons/mongodb-icon.svg" alt="MongoDB"/></div>
+          <div class="tech-icon-circle" title="Gemini"><img src="assets/icons/Grok-logo.svg" alt="Gemini"/></div>
+        </div>
+        <div class="card-links-group">
+          <span class="card-link">
+            View on GitHub <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </span>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://github.com/kenzokaz/second-marketplace" target="_blank" rel="noopener"
+       class="project-card-featured fade-up"
+       id="marketplace"
+       data-category="fullstack"
+       style="transition-delay:0.08s">
+      <div class="featured-left">
+        <span class="featured-badge">Full-Stack - 2026</span>
+        <div class="featured-title">Second-Hand Marketplace</div>
+        <p class="featured-desc">
+          A complete buy-and-sell web application covering electronics, clothing, books, vinyl, and collectibles. Built with a PHP backend and MySQL database. Includes both a seller dashboard for listing management and an admin panel for platform oversight.
+        </p>
+        
+        <div class="card-footer" style="border-top: none; padding-top: 0; margin-top: auto; width: 100%;">
+          <div class="card-tags">
+            <div class="tech-icon-circle" title="PHP"><img src="assets/icons/php.svg" alt="PHP"/></div>
+            <div class="tech-icon-circle" title="MySQL"><img src="assets/icons/mysql.svg" alt="MySQL"/></div>
+            <div class="tech-icon-circle" title="Bootstrap 5"><img src="assets/icons/bootstrap.svg" alt="Bootstrap"/></div>
+            <div class="tech-icon-circle" title="JavaScript"><img src="assets/icons/javascript.svg" alt="JavaScript"/></div>
+          </div>
+          <div class="card-links-group">
+            <span class="featured-link">
+              View on GitHub
+              <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="featured-right">
+        <div class="featured-detail-label">Key features</div>
+        <div class="featured-detail-value">
+          User registration / login / logout · Browse, search, and filter by category and condition · Shopping cart with add, remove, and quantity tracking · Checkout with order placement and automatic stock decrement · Order history · Seller dashboard · Admin panel · SQL injection protection via prepared statements · Password hashing
+        </div>
+        <div class="featured-detail-label">Security</div>
+        <div class="featured-detail-value">
+          All database queries use PDO prepared statements. Passwords stored with PHP's <code>password_hash()</code>. Client-side validation supplemented by server-side checks.
+        </div>
+        <div class="featured-detail-label">Status</div>
+        <div class="featured-detail-value">Complete - local deployment via XAMPP.</div>
+      </div>
+    </a>
+
+    <a href="https://github.com/kenzokaz/data-professional-survey-powerbi" target="_blank" rel="noopener" class="project-card fade-up" id="survey" data-category="data" style="transition-delay:0.07s">
+      <div class="card-top">
+        <div class="card-type-icon"><svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+        <span class="card-date-badge">2025</span>
+      </div>
+      <div class="card-title">Data Professional Survey Breakdown</div>
+      <div class="card-desc">
+        Power BI dashboard analyzing 630 survey responses from data professionals worldwide - salary by job title, programming language preferences, and workplace happiness scores.
+      </div>
+      
+      <div class="card-footer">
+        <div class="card-tags">
+          <div class="tech-icon-circle" title="Power BI"><img src="assets/icons/powerbi.svg" alt="Power BI"/></div>
+          <div class="tech-icon-circle" title="Microsoft Office / Query"><img src="assets/icons/Microsoft_logo.png" alt="Power Query"/></div>
+          <div class="tech-icon-circle" title="Microsoft Excel"><img src="assets/icons/excel.svg" alt="Excel"/></div>
+        </div>
+        <div class="card-links-group">
+          <span class="card-link">
+            View on GitHub <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </span>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://github.com/kenzokaz/Cleaning-Services-Website" target="_blank" rel="noopener" class="project-card fade-up" data-category="web" style="transition-delay:0.08s">
+      <div class="card-top">
+        <div class="card-type-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+        <span class="card-date-badge">Dec 2024</span>
+      </div>
+      <div class="card-title">Cleaning Services Website</div>
+      <div class="card-desc">
+        Responsive business site with service detail sections, a contact form, and an online booking form. Built with semantic HTML and CSS with no framework dependency.
+      </div>
+      
+      <div class="card-footer">
+        <div class="card-tags">
+          <div class="tech-icon-circle" title="HTML5"><img src="assets/icons/html5.svg" alt="HTML5"/></div>
+          <div class="tech-icon-circle" title="CSS3"><img src="assets/icons/CSS3.svg" alt="CSS3"/></div>
+        </div>
+        <div class="card-links-group">
+          <span class="card-link">
+            View on GitHub <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </span>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://github.com/kenzokaz/MiniGames-" target="_blank" rel="noopener" class="project-card fade-up" data-category="java" style="transition-delay:0.12s">
+      <div class="card-top">
+        <div class="card-type-icon"><svg viewBox="0 0 24 24"><line x1="6" y1="12" x2="10" y2="12"/><line x1="8" y1="10" x2="8" y2="14"/><line x1="15" y1="13" x2="15.01" y2="13"/><line x1="18" y1="11" x2="18.01" y2="11"/><rect x="2" y="6" width="20" height="12" rx="2"/></svg></div>
+        <span class="card-date-badge">Mar 2023</span>
+      </div>
+      <div class="card-title">JavaFX Mini-Game App</div>
+      <div class="card-desc">
+        JavaFX desktop mini-game application supporting multiplayer user interaction. Built around JavaFX scene and event-handling principles with a clean GUI layout.
+      </div>
+      
+      <div class="card-footer">
+        <div class="card-tags">
+          <div class="tech-icon-circle" title="Java"><img src="assets/icons/java.svg" alt="Java"/></div>
+          <div class="tech-icon-circle" title="JavaFX Framework"><img src="assets/icons/JavaFX_text_logo.png" alt="JavaFX"/></div>
+        </div>
+        <div class="card-links-group">
+          <span class="card-link">
+            View on GitHub <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </span>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://github.com/kenzokaz/Java-Music-PlayList-App-" target="_blank" rel="noopener" class="project-card fade-up" data-category="java" style="transition-delay:0.16s">
+      <div class="card-top">
+        <div class="card-type-icon"><svg viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div>
+        <span class="card-date-badge">Feb 2022</span>
+      </div>
+      <div class="card-title">Java Playlist Manager</div>
+      <div class="card-desc">
+        CLI-based Java application for managing music playlists. Features a menu-driven interface covering playlist creation, track management, and playback order control.
+      </div>
+      
+      <div class="card-footer">
+        <div class="card-tags">
+          <div class="tech-icon-circle" title="Java"><img src="assets/icons/java.svg" alt="Java"/></div>
+          <div class="tech-icon-circle" title="Command Line Interface"><img src="assets/icons/command-line.png" alt="CLI"/></div>
+        </div>
+        <div class="card-links-group">
+          <span class="card-link">
+            View on GitHub <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </span>
+        </div>
+      </div>
+    </a>
+
   </div>
+</div>
 
   <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Kazura Kenzo. All rights reserved.</p>
+    <p>&copy; 2026 Kazura Kenzo. All rights reserved.</p>
     <p>Hosted on <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a></p>
   </footer>
 

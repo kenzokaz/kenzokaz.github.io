@@ -3,126 +3,110 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Kazura Kenzo - Software Developer and Data Professional based in Toronto." />
+  <meta name="description" content="Kazura Kenzo - Data Professional and Software Developer based in Toronto." />
   <title>Kazura Kenzo</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
-  <style>
-    .badge-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 1.1rem; }
-    .badge-tags img { height: 22px; border-radius: 4px; }
-  </style>
 </head>
 <body>
 
   <!-- NAV -->
   <nav>
-    <a href="index.html" class="nav-logo">Kazura Kenzo</a>
+    <a href="/" class="nav-logo" aria-label="Kazura Kenzo - home">
+      <span class="logo-prompt">kenzo=#</span><span class="logo-query"> SELECT * FROM portfolio;</span><span class="logo-caret"></span>
+    </a>
     <ul class="nav-links">
+      <li><a href="#hero">About</a></li> 
       <li><a href="#experience">Experience</a></li>
-      <li><a href="projects.html">Projects</a></li>
+      <li><a href="#projects">Projects</a></li>      
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="assets/Kazura Kenzo's CV.pdf" target="_blank" rel="noopener">Resume</a></li>
       <li><a href="#contact" class="nav-cta">Contact</a></li>
     </ul>
   </nav>
 
   <!-- HERO -->
-  <section id="hero">
+<section id="hero">
     <div class="hero-bg-accent"></div>
-    <div class="hero-grid">
+    <div class="hero-grid" style="display: flex; align-items: center; justify-content: space-between; gap: 5rem; flex-wrap: wrap;">
+      <div class="hero-left" style="flex: 5; min-width: 400px;">
+        <p class="hero-title-line" style="margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 1px; font-size: 1.5rem;">Data Professional & Software Developer</p>
+        <h1 class="hero-name" style="font-size: 5.5rem; line-height: 1.1; margin-bottom: 1rem;">
+          Hello, I'm<br/>
+          <span class="hover-selection-name">Kazura Kenzo.</span></h1>
+        </h1>
 
-      <div class="hero-left">
-        <div class="hero-availability">
-          <span class="hero-availability-dot"></span>
-          Available for opportunities
-        </div>
+        <p class="hero-bio" style="max-width: 500px; margin-bottom: 2rem; line-height: 1.6;">
+          Data & IT professional - analytics, cloud, and infrastructure. 
+          <br>
+          Toronto, Canada. </p>
 
-        <h1 class="hero-name">Kazura Kenzo</h1>
-        <p class="hero-title-line">Software Developer &amp; Data Professional</p>
-
-        <p class="hero-bio">
-          Computer Science student at Algoma University with hands-on experience in
-          data analytics, full-stack development, and cloud infrastructure.
-          Based in Toronto, Ontario.
-        </p>
-
-        <div class="hero-actions">
-          <a href="projects.html" class="btn btn-primary">View projects</a>
-          <a href="assets/Kenzo's CV.pdf" class="btn btn-ghost" download>Download CV</a>
-        </div>
-      </div>
-
-      <div class="hero-right">
-        <div class="info-card fade-up">
-          <div class="info-card-icon">
-            <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-          </div>
-          <div>
-            <div class="info-card-label">Current role</div>
-            <div class="info-card-value">Data Localization Analyst - Mindy Support</div>
-          </div>
-        </div>
-
-        <div class="info-card fade-up" style="transition-delay:0.1s">
-          <div class="info-card-icon">
-            <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-          </div>
-          <div>
-            <div class="info-card-label">Focus areas</div>
-            <div class="info-card-value">Data Analytics · Full-Stack · Cloud</div>
-          </div>
-        </div>
-
-        <div class="info-card fade-up" style="transition-delay:0.2s">
-          <div class="info-card-icon">
-            <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-          </div>
-          <div>
-            <div class="info-card-label">Education</div>
-            <div class="info-card-value">BSc Computer Science - Algoma University, 2026</div>
-          </div>
-        </div>
-
-        <div class="info-card fade-up" style="transition-delay:0.3s">
-          <div class="info-card-icon">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-          </div>
-          <div>
-            <div class="info-card-label">Languages</div>
-            <div class="info-card-value">English (Fluent) · French (Fluent)</div>
+        <div class="hero-actions" style="display: flex; align-items: center; gap: 1.5rem;">
+          <a href="assets/Kazura Kenzo's CV.pdf" target="_blank" rel="noopener" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; border-radius: 50px; text-decoration: none; color: inherit;">
+            VIEW CV 
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          
+          <div class="social-icons" style="display: flex; gap: 1rem;">
+            <a href="https://www.linkedin.com/in/kazura-kenzo-108b56247/" target="_blank" rel="noopener" class="social-circle" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://github.com/kenzokaz" target="_blank" rel="noopener" class="social-circle" aria-label="GitHub">
+              <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
           </div>
         </div>
       </div>
 
-    </div>
+      <div class="hero-right" style="flex: 2.9; display: flex; justify-content: flex-end; min-width: 300px;">
+        <div class="avatar-container">
+         <svg style="position: absolute; width: 0; height: 0;" aria-hidden="true">
+            <defs>
+              <filter id="liquid-mercury-blob">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+              </filter>
+            </defs>
+          </svg>
+          
+          <div class="ring-layer outer-layer">
+            <svg class="kinetic-ring" viewBox="0 0 100 100">
+              <circle class="track-a" cx="50" cy="50" r="44" fill="none" stroke-linecap="round" stroke-dasharray="40 25 30 25" />
+              <circle class="track-b" cx="50" cy="50" r="44" fill="none" stroke-linecap="round" stroke-dasharray="15 35 20 50" />
+            </svg>
+          </div>
+          
+          <div class="ring-layer inner-layer">
+            <svg class="kinetic-ring" viewBox="0 0 100 100">
+              <circle class="track-a" cx="50" cy="50" r="44" fill="none" stroke-linecap="round" stroke-dasharray="25 25 15 35" />
+              <circle class="track-b" cx="50" cy="50" r="44" fill="none" stroke-linecap="round" stroke-dasharray="10 40 30 20" />
+            </svg>
+          </div>
+          
+          <div class="img-wrapper profile-container" id="profile-trigger">
+            <img src="assets/images/profile-1.jpeg" alt="Kazura Kenzo" class="avatar-img" id="profile-img" />
+  
+                 <div id="profile-location" class="profile-location-badge"> ⚲ Robertson Cliffs, Sault Ste. Marie, ON</div>
+          <div class="click-me-pill">CLICK ME</div>
+        </div>
+
+        </div>
+      </div>
   </section>
 
-  <!-- STACK STRIP -->
-  <div class="stack-strip">
-    <span class="strip-label">Stack</span>
-    <span class="pill">Python</span>
-    <span class="pill">Java</span>
-    <span class="pill">JavaScript</span>
-    <span class="pill">SQL</span>
-    <span class="pill">React</span>
-    <span class="pill">TypeScript</span>
-    <span class="pill">Power BI</span>
-    <span class="pill">AWS</span>
-    <span class="pill">Azure</span>
-    <span class="pill">Docker</span>
-    <span class="pill">Apache Spark</span>
-    <span class="pill">Git</span>
-  </div>
+
 
   <!-- EXPERIENCE -->
   <section id="experience">
-    <div class="section-inner">
-      <div class="section-eyebrow fade-up">Career</div>
+    <div class="section-header">
+      <br>
       <h2 class="section-heading fade-up">Work Experience</h2>
-      <p class="section-sub fade-up">Roles spanning data analytics, IT infrastructure, and technical support.</p>
-
+      <br>
       <div class="exp-list">
 
         <div class="exp-item fade-up">
@@ -131,15 +115,18 @@
             <span class="exp-date">Jan 2025 – Present</span>
             <span class="exp-badge">Current</span>
           </div>
-          <div class="exp-role">Data Localization Analyst</div>
-          <div class="exp-company">Mindy Support - Remote</div>
+          <div class="exp-role">Data Localization Analyst (Remote)</div>
+          <div class="exp-company">Mindy Support - North York, ON</div>
           <ul class="exp-bullets">
-            <li>Analyzed multilingual datasets using SQL, Excel, and Power BI, increasing reporting accuracy by 20%.</li>
-            <li>Built Power BI dashboards that reduced manual reporting time by 40%.</li>
-            <li>Automated data cleaning via Excel Power Query; assisted development of Python validation scripts.</li>
-            <li>Maintained 95%+ data accuracy across multilingual datasets through structured QA workflows.</li>
+           <li>Reviewed multilingual text datasets against quality standards, logging errors by type and severity.</li>
+            <li>Used SQL and Excel to aggregate QA results and surface recurring error patterns by language.</li>
+            <li>Built Power BI dashboards tracking error rates, quality scores, and translation-quality trends.</li>
+            <li>Automated data cleaning of language datasets with Excel Power Query and Python.</li>
+            <li>Applied structured QA workflows with consistent pass/fail criteria to keep data accurate.</li>
           </ul>
         </div>
+
+
 
         <div class="exp-item fade-up">
           <div class="exp-dot"></div>
@@ -174,158 +161,372 @@
     </div>
   </section>
 
-  <!-- PROJECTS PREVIEW -->
-  <section class="projects-preview">
-    <div class="section-inner">
+ 
+<section id="projects" class="projects-preview">
+  <div class="section-inner">
+    
+    <div class="section-header">
       <div class="section-eyebrow fade-up">Selected work</div>
-      <h2 class="section-heading fade-up">Projects</h2>
-      <p class="section-sub fade-up">A sample of recent work - visit the projects page for the full list.</p>
-
-      <div class="projects-grid">
-
-        <!-- ETL Pipeline -->
-        <a href="projects.html#etl" class="project-card fade-up" style="transition-delay:0.04s">
-          <div class="card-top">
-            <div class="card-type-icon">🔁</div>
-            <span class="card-date-badge">2026</span>
-          </div>
-          <div class="card-title">Toronto Airbnb ETL Pipeline</div>
-          <div class="card-desc">Containerized data pipeline ingesting 15,000+ Toronto Airbnb listings, transforming with Python and Pandas, warehousing in PostgreSQL, and visualizing via a Streamlit dashboard orchestrated by Airflow.</div>
-          <div class="badge-tags">
-            <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
-            <img src="https://img.shields.io/badge/Airflow-017CEE?style=flat-square&logo=apacheairflow&logoColor=white" alt="Airflow"/>
-            <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
-            <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker"/>
-          </div>
-          <span class="card-link">View project <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
-        </a>
-
-        <!-- Second-Hand Marketplace -->
-        <a href="projects.html#marketplace" class="project-card fade-up" style="transition-delay:0.12s">
-          <div class="card-top">
-            <div class="card-type-icon">🛒</div>
-            <span class="card-date-badge">2026</span>
-          </div>
-          <div class="card-title">Second-Hand Marketplace</div>
-          <div class="card-desc">Full-stack buy/sell platform with user auth, seller dashboard, admin panel, shopping cart, and order management.</div>
-          <div class="badge-tags">
-            <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP"/>
-            <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL"/>
-            <img src="https://img.shields.io/badge/Bootstrap%205-7952B3?style=flat-square&logo=bootstrap&logoColor=white" alt="Bootstrap 5"/>
-            <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript"/>
-          </div>
-          <span class="card-link">View project <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
-        </a>
-
-                <!-- TTC Bus Delay Dashboard -->
-        <a href="projects.html#ttc" class="project-card fade-up" style="transition-delay:0.08s">
-          <div class="card-top">
-            <div class="card-type-icon">📊</div>
-            <span class="card-date-badge">2025</span>
-          </div>
-          <div class="card-title">TTC Bus Delay Dashboard</div>
-          <div class="card-desc">Power BI dashboard analyzing 58,000+ TTC bus delay incidents across Toronto in 2025. Covers delay trends by route, day, direction, and cause using City of Toronto open data.</div>
-          <div class="badge-tags">
-            <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" alt="Power BI"/>
-            <img src="https://img.shields.io/badge/Power%20Query-285192?style=flat-square&logo=microsoft&logoColor=white" alt="Power Query"/>
-            <img src="https://img.shields.io/badge/DAX-F2C811?style=flat-square&logo=powerbi&logoColor=black" alt="DAX"/>
-          </div>
-          <span class="card-link">View project <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
-        </a>
-
-      </div>
-
-      <div class="projects-see-all fade-up">
-        <a href="projects.html">
-          See all projects
-          <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </a>
-      </div>
+      <h2 class="section-heading fade-up">Projects<span class="period">.</span></h2>
     </div>
-  </section>
+
+    <div class="projects-grid">
+
+      <a href="https://github.com/kenzokaz/toronto-airbnb-etl-pipeline" target="_blank" rel="noopener" class="project-card fade-up" style="transition-delay:0.04s">        
+        <div class="card-top">
+          <div class="card-type-icon">
+            <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <span class="card-date-badge">2026</span>
+        </div>
+        <div class="card-title">Toronto Airbnb ETL Pipeline</div>
+        <div class="card-desc">Containerized data pipeline ingesting 15,000+ Toronto Airbnb listings, transforming with Python and Pandas, warehousing in PostgreSQL, and visualizing via a Streamlit dashboard orchestrated by Airflow.</div>
+        
+        <div class="card-footer">
+          <div class="card-tags">
+            <div class="tech-icon-circle" title="Python"><img src="assets/icons/python.svg" alt="Python"/></div>
+            <div class="tech-icon-circle" title="Apache Airflow"><img src="assets/icons/airflow.svg" alt="Airflow"/></div>
+            <div class="tech-icon-circle" title="PostgreSQL"><img src="assets/icons/postgresql.svg" alt="PostgreSQL"/></div>
+            <div class="tech-icon-circle" title="Docker"><img src="assets/icons/docker.svg" alt="Docker"/></div>
+          </div>
+          <span class="card-link">View project <svg viewBox="0 0 24 24" width="16" height="16"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
+        </div>
+      </a>
+
+<div class="project-card fade-up" style="transition-delay:0.12s">
+        <div class="card-top">
+          <div class="card-type-icon">
+            <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <span class="card-date-badge">2025</span>
+        </div>
+        <div class="card-title">Coach-Fit</div>
+        <div class="card-desc">FREE AI-powered fitness tracking app with detailed workout logging, an analytics dashboard, and JWT authentication. Built with React, Node.js, and MongoDB; uses Grok to generate personalised training recommendations from your logged history.</div>
+
+        <div class="card-footer">
+          <div class="card-tags">
+            <div class="tech-icon-circle" title="React"><img src="assets/icons/react.svg" alt="React"/></div>
+            <div class="tech-icon-circle" title="TypeScript"><img src="assets/icons/typescript.svg" alt="TypeScript"/></div>
+            <div class="tech-icon-circle" title="Node.js"><img src="assets/icons/nodejs.svg" alt="Node.js"/></div>
+            <div class="tech-icon-circle" title="MongoDB"><img src="assets/icons/mongodb-icon.svg" alt="MongoDB"/></div>
+            <div class="tech-icon-circle" title="Grok"><img src="assets/icons/Grok-logo.svg" alt="Gemini"/></div>
+          </div>
+          <div class="card-links-group">
+            <a href="https://coach-fit-one.vercel.app" target="_blank" rel="noopener" class="card-link">
+              Try it live <svg viewBox="0 0 24 24" width="16" height="16"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+            <a href="https://github.com/kenzokaz/Coach-Fit." target="_blank" rel="noopener" class="card-link">
+              View on GitHub <svg viewBox="0 0 24 24" width="16" height="16"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <a href="https://github.com/kenzokaz/ttc-bus-delay-powerbi" target="_blank" rel="noopener" class="project-card fade-up" style="transition-delay:0.08s">
+        <div class="card-top">
+          <div class="card-type-icon">
+            <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <span class="card-date-badge">2025</span>
+        </div>
+        <div class="card-title">TTC Bus Delay Dashboard</div>
+        <div class="card-desc">Power BI dashboard analyzing 58,000+ TTC bus delay incidents across Toronto in 2025. Covers delay trends by route, day, direction, and cause using City of Toronto open data.</div>
+        
+        <div class="card-footer">
+          <div class="card-tags">
+            <div class="tech-icon-circle" title="Power BI"><img src="assets/icons/powerbi.svg" alt="Power BI"/></div>
+            <div class="tech-icon-circle" title="Microsoft Office / Query"><img src="assets/icons/Microsoft_logo.png" alt="Power Query"/></div>
+            <div class="tech-icon-circle" title="Microsoft Excel"><img src="assets/icons/Microsoft_Office_Excel.svg" alt="DAX Tools"/></div>
+          </div>
+          <span class="card-link">View project <svg viewBox="0 0 24 24" width="16" height="16"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="projects-see-all fade-up">
+      <a href="/projects">
+        See all projects
+        <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+
+  </div>
+</section>
 
   <!-- SKILLS -->
   <section id="skills">
     <div class="section-inner">
-      <div class="section-eyebrow fade-up">Toolbox</div>
+      <br>
       <h2 class="section-heading fade-up">Technical Skills</h2>
-      <p class="section-sub fade-up">Languages, platforms, and tools I work with regularly.</p>
+      <br>
 
       <div class="skills-grid">
 
         <div class="skill-group fade-up">
-          <div class="skill-group-title">Programming</div>
-          <div class="skill-items">
-            <span class="skill-item">Python</span>
-            <span class="skill-item">Java</span>
-            <span class="skill-item">JavaScript</span>
-            <span class="skill-item">TypeScript</span>
-            <span class="skill-item">SQL</span>
-            <span class="skill-item">PHP</span>
-            <span class="skill-item">HTML / CSS</span>
+          <div class="skill-group-title">Data &amp; Analytics</div>
+          <div class="skill-tiles">
+          <div class="skill-tile"><img src="assets/icons/powerbi.svg" alt="" loading="lazy"><span>Power BI</span></div>
+          <div class="skill-tile"><img src="assets/icons/tableau.svg" alt="" loading="lazy"><span>Tableau</span></div>
+          <div class="skill-tile"><img src="assets/icons/excel.svg" alt="" loading="lazy"><span>Excel / Power Query</span></div>
+          <div class="skill-tile"><img src="assets/icons/pandas.svg" alt="" loading="lazy"><span>Pandas</span></div>
+          <div class="skill-tile"><img src="assets/icons/numpy.svg" alt="" loading="lazy"><span>NumPy</span></div>
+          <div class="skill-tile"><img src="assets/icons/postgresql.svg" alt="" loading="lazy"><span>PostgreSQL</span></div>
+          <div class="skill-tile"><img src="assets/icons/sqlserver.svg" alt="" loading="lazy"><span>SQL Server</span></div>
+          <div class="skill-tile"><img src="assets/icons/spark.svg" alt="" loading="lazy"><span>Apache Spark</span></div>
+          <div class="skill-tile"><img src="assets/icons/airflow.svg" alt="" loading="lazy"><span>Apache Airflow</span></div>
+          <div class="skill-tile"><img src="assets/icons/databricks.svg" alt="" loading="lazy"><span>Databricks</span></div>
           </div>
         </div>
 
         <div class="skill-group fade-up" style="transition-delay:0.05s">
-          <div class="skill-group-title">Data &amp; Analytics</div>
-          <div class="skill-items">
-            <span class="skill-item">Power BI</span>
-            <span class="skill-item">Pandas</span>
-            <span class="skill-item">NumPy</span>
-            <span class="skill-item">Excel Power Query</span>
-            <span class="skill-item">SQL Server</span>
-            <span class="skill-item">ETL Pipelines</span>
+          <div class="skill-group-title">Programming Languages</div>
+          <div class="skill-tiles">
+          <div class="skill-tile"><img src="assets/icons/python.svg" alt="" loading="lazy"><span>Python</span></div>
+          <div class="skill-tile"><img src="assets/icons/java.svg" alt="" loading="lazy"><span>Java</span></div>
+          <div class="skill-tile"><img src="assets/icons/javascript.svg" alt="" loading="lazy"><span>JavaScript</span></div>
+          <div class="skill-tile"><img src="assets/icons/typescript.svg" alt="" loading="lazy"><span>TypeScript</span></div>
+          <div class="skill-tile"><img src="assets/icons/sql.svg" alt="" loading="lazy"><span>SQL</span></div>
+          <div class="skill-tile"><img src="assets/icons/php.svg" alt="" loading="lazy"><span>PHP</span></div>
+          <div class="skill-tile"><img src="assets/icons/html5.svg" alt="" loading="lazy"><span>HTML / CSS</span></div>
           </div>
         </div>
 
         <div class="skill-group fade-up" style="transition-delay:0.1s">
-          <div class="skill-group-title">Cloud &amp; Infrastructure</div>
-          <div class="skill-items">
-            <span class="skill-item">AWS (EC2, S3, IAM)</span>
-            <span class="skill-item">Azure SQL</span>
-            <span class="skill-item">Blob Storage</span>
-            <span class="skill-item">VLANs / VPN</span>
-            <span class="skill-item">Windows Admin</span>
+          <div class="skill-group-title">Frameworks &amp; Libraries</div>
+          <div class="skill-tiles">
+          <div class="skill-tile"><img src="assets/icons/react.svg" alt="" loading="lazy"><span>React</span></div>
+          <div class="skill-tile"><img src="assets/icons/nodejs.svg" alt="" loading="lazy"><span>Node.js</span></div>
+          <div class="skill-tile"><img src="assets/icons/express.svg" alt="" loading="lazy"><span>Express</span></div>
+          <div class="skill-tile"><img src="assets/icons/bootstrap.svg" alt="" loading="lazy"><span>Bootstrap</span></div>
+          <div class="skill-tile"><img src="assets/icons/java.svg" alt="" loading="lazy"><span>JavaFX</span></div>
           </div>
         </div>
 
         <div class="skill-group fade-up" style="transition-delay:0.15s">
-          <div class="skill-group-title">Data Engineering</div>
-          <div class="skill-items">
-            <span class="skill-item">Apache Spark</span>
-            <span class="skill-item">Databricks</span>
-            <span class="skill-item">Apache Airflow</span>
-            <span class="skill-item">PostgreSQL</span>
-            <span class="skill-item">Data Warehousing</span>
+          <div class="skill-group-title">Tools &amp; Platforms</div>
+          <div class="skill-tiles">
+          <div class="skill-tile"><img src="assets/icons/git.svg" alt="" loading="lazy"><span>Git</span></div>
+          <div class="skill-tile"><img src="assets/icons/docker.svg" alt="" loading="lazy"><span>Docker</span></div>
+          <div class="skill-tile"><img src="assets/icons/aws.svg" alt="" loading="lazy"><span>AWS</span></div>
+          <div class="skill-tile"><img src="assets/icons/azure.svg" alt="" loading="lazy"><span>Azure</span></div>
+          <div class="skill-tile"><img src="assets/icons/jira.svg" alt="" loading="lazy"><span>Jira</span></div>
+          <div class="skill-tile"><img src="assets/icons/vscode.svg" alt="" loading="lazy"><span>VS Code</span></div>
           </div>
         </div>
 
-        <div class="skill-group fade-up" style="transition-delay:0.2s">
-          <div class="skill-group-title">DevOps &amp; Tools</div>
-          <div class="skill-items">
-            <span class="skill-item">Git</span>
-            <span class="skill-item">Docker</span>
-            <span class="skill-item">Jira</span>
-            <span class="skill-item">VS Code</span>
-            <span class="skill-item">Zendesk</span>
+      </div>
+
+      <div class="languages-section fade-up" style="transition-delay:0.2s">
+  <div class="skill-group-title">Languages & Credentials</div>
+  
+  <div class="languages-grid">
+    
+    <!-- ENGLISH CARD -->
+    <div class="lang-profile-card">
+      <div class="lang-card-header">
+        <div class="lang-title-row">
+          <img class="lang-card-flag" src="assets/icons/flag-ca.svg" alt="Canada Flag">
+          <h3>English</h3>
+        </div>
+        <span class="lang-status-badge fluent">Fluent</span>
+      </div>
+      
+      <div class="lang-card-divider"></div>
+      
+      <div class="lang-credential-box">
+        <div class="cred-logo-container">
+          <img src="assets/icons/celpip.jpeg" alt="CELPIP Logo" class="cred-brand-logo" loading="lazy">
+        </div>
+        <div class="cred-details">
+          <span class="cred-label">Examination</span>
+          <h4 class="cred-title">CELPIP General</h4>
+          
+          <!-- Premium Score Integration Engine -->
+          <div class="cred-score-display">
+            <div class="score-data">
+              <span class="score-obtained">11</span>
+              <span class="score-max">/12</span>
+            </div>
+            <span class="cred-score-pill">Advanced Proficiency</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FRENCH CARD -->
+    <div class="lang-profile-card">
+      <div class="lang-card-header">
+        <div class="lang-title-row">
+          <img class="lang-card-flag" src="assets/icons/flag-fr.svg" alt="France Flag">
+          <h3>French</h3>
+        </div>
+        <span class="lang-status-badge bilingual">Fluent</span>
+      </div>
+      
+      <div class="lang-card-divider"></div>
+      
+      <div class="lang-credential-box">
+        <div class="cred-logo-container">
+          <img src="assets/icons/ib-logo.svg" alt="IB Logo" class="cred-brand-logo" loading="lazy">
+        </div>
+        <div class="cred-details">
+          <span class="cred-label">Academic Stream</span>
+          <h4 class="cred-title">International Baccalaureate</h4>
+          <span class="cred-score-pill">Bilingual Diploma Recipient</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</section>
+
+   <!-- EDUCATION -->
+<section id="education" style="background-color: var(--bg); padding: 6rem 3rem;">
+  <div class="section-inner">
+    
+    <div class="section-header">
+      <br>
+      <h2 class="section-heading fade-up">Education</h2>
+    </div>
+
+    <div class="timeline-container fade-up">
+      <div class="timeline-line"></div>
+
+      <div class="timeline-item left-item">
+        <div class="timeline-content-wrapper">
+          <div class="timeline-card">
+            <h3 class="timeline-title">BSc (Honours) Computer Science</h3>
+            <p class="timeline-subtitle">Algoma University – Brampton, ON</p>
+            <ul class="timeline-bullets">
+              <li><strong>Status:</strong> Graduated on June 17, 2026 </li>
+              <li>Focus on software development, databases, and data-driven systems.</li>
+              <li>Applied coursework projects in Java, web dev, and data engineering.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-node">
+          <svg viewBox="0 0 24 24" style="width:24px; height:24px; stroke:var(--wine); fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round;">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+          </svg>
+        </div>
+        
+        <div class="timeline-date">2022 – 2026</div>
+      </div>
+
+
+      <div class="timeline-item right-item"> 
+        <div class="timeline-content-wrapper">
+          <div class="timeline-card">
+            <h3 class="timeline-title">International Baccalaureate Diploma</h3>
+            <p class="timeline-subtitle">Green Hills Academy – Kigali, Rwanda</p>
+            <ul class="timeline-bullets">
+              <li>Full IB Diploma Programme Curriculum</li>
+              <li>International standard bilingual/multicultural environment</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-node">
+          <svg viewBox="0 0 24 24" style="width:22px; height:22px; stroke:var(--wine); fill:none; stroke-width:2; stroke-linecap:round;">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            <path d="M2 12h20"/>
+          </svg>
+        </div>
+        
+        <div class="timeline-date">2019 – 2021</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</div> </div> </section> 
+
+<section id="certifications" style="padding: 2rem 0 6rem 0;">
+  <div class="section-inner"> <div class="certifications-section fade-up" style="transition-delay:0.25s">
+      <div class="skill-group-title">Licenses &amp; Certifications</div>
+      
+      <div class="certs-grid">
+        
+        <div class="cert-profile-card">
+          <div class="cert-card-header">
+            <div class="cert-logo-container light-bg">
+              <img src="assets/icons/Microsoft_logo.png" alt="Microsoft Logo" class="cert-brand-logo" loading="lazy">
+            </div>
+            <span class="cert-date">Dec 2024</span>
+          </div>
+          
+          <div class="cert-body">
+            <h3 class="cert-title">Career Essentials in System Administration</h3>
+            <p class="cert-issuer">Microsoft and LinkedIn</p>
+            <div class="cert-skills-tags">
+              <span class="cert-tag">Network Security</span>
+              <span class="cert-tag">System Administration</span>
+            </div>
+          </div>
+          
+          <div class="cert-footer">
+            <a href="https://www.linkedin.com/learning/certificates/47509e2d3d345c3ab716310e3a8ad35d47b82ff0826350e4d25bff19d2142125" target="_blank" rel="noopener noreferrer" class="cert-action-btn">
+              <span>Show credential</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
           </div>
         </div>
 
-        <div class="skill-group fade-up" style="transition-delay:0.25s">
-          <div class="skill-group-title">Frameworks</div>
-          <div class="skill-items">
-            <span class="skill-item">React</span>
-            <span class="skill-item">Node.js</span>
-            <span class="skill-item">Express</span>
-            <span class="skill-item">JavaFX</span>
-            <span class="skill-item">Bootstrap</span>
+        <div class="cert-profile-card">
+          <div class="cert-card-header">
+            <div class="cert-logo-container dark-bg">
+              <img src="assets/icons/ib-logo.svg" alt="IB Logo" class="cert-brand-logo" loading="lazy">
+            </div>
+            <span class="cert-date">May 2021</span>
+          </div>
+          
+          <div class="cert-body">
+            <h3 class="cert-title">International Baccalaureate Diploma</h3>
+            <p class="cert-issuer">International Baccalaureate</p>
+            <div class="cert-skills-tags">
+              <span class="cert-tag">Bilingual Stream</span>
+              <span class="cert-tag">Academic Excellence</span>
+            </div>
+          </div>
+          
+          <div class="cert-footer">
+            <span class="cert-verified-badge">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              Verified
+            </span>
+          </div>
+        </div>
+
+        <div class="cert-profile-card placeholder-card">
+          <div class="cert-card-header">
+            <div class="placeholder-icon-container">
+              <svg class="loading-pulse-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+            </div>
+            <span class="placeholder-status-badge">Pipeline Active</span>
+          </div>
+          
+          <div class="cert-body">
+            <h3 class="cert-title placeholder-text">More Credentials Loading...</h3>
+            <p class="cert-issuer"></p>
+          </div>
+          
+          <div class="cert-footer">
+            <span class="placeholder-footer-note">// Next Level Syncing</span>
           </div>
         </div>
 
       </div>
     </div>
-  </section>
 
+  </div> </section> 
+  
   <!-- CONTACT -->
   <section id="contact">
     <div class="section-inner">
@@ -334,7 +535,7 @@
         <div>
           <div class="section-eyebrow fade-up">Get in touch</div>
           <h2 class="section-heading fade-up">Let's connect</h2>
-          <p class="section-sub fade-up">Open to data roles, software development positions, freelance work, and collaborations.</p>
+          <p class="section-sub fade-up">Open to collaborations.</p>
 
           <div class="contact-details">
             <div class="contact-row fade-up">
@@ -364,9 +565,17 @@
         </div>
 
         <div class="contact-note fade-up">
-          <p>Currently completing my BSc in Computer Science at Algoma University (graduating 2026) while building experience across full-stack development, data engineering, and cloud infrastructure.</p>
-          <p>Whether it's an internship, entry-level role, freelance project, or a collaboration - reach out anytime.</p>
-          <a href="mailto:kazurakenzo@gmail.com" class="btn btn-primary">Send an email</a>
+          <form class="contact-form" action="https://formsubmit.co/kazurakenzo@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New message from kenzokaz.github.io" />
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+            <label for="cf-name">Your name</label>
+            <input id="cf-name" type="text" name="name" placeholder="Your Name" required />
+            <label for="cf-email">Your email</label>
+            <input id="cf-email" type="email" name="email" placeholder="Your Email" required />
+            <label for="cf-message">Your message</label>
+            <textarea id="cf-message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            <button type="submit" class="btn btn-primary">Send message</button>
+          </form>
         </div>
 
       </div>
@@ -375,10 +584,10 @@
 
   <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Kazura Kenzo. All rights reserved.</p>
+    <p>&copy; 2026 Kazura Kenzo. All rights reserved.</p>
     <p>Hosted on <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a></p>
   </footer>
 
   <script src="assets/js/main.js"></script>
 </body>
-</html> 
+</html>
