@@ -13,7 +13,7 @@ portfolio/
     │   └── style.css       ← All styles, CSS variables, responsive rules
     ├── js/
     │   └── main.js         ← Scroll animations, nav highlight, smooth scroll
-    └── Kenzo_CV.pdf        ← Resume (linked from the Download CV button)
+    └── Kazura Kenzo's CV.pdf        ← Resume (linked from the Download CV button)
 ```
 
 ## How to update
